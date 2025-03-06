@@ -115,7 +115,11 @@ def root(response: Response):
     return {"message": "Hello from my api"}
 
 # Чтобы реализовать базовую аутентификацию в FastAPI, нам необходимо выполнить следующие действия:
-
+"""
+Идентификация - вводим логин
+Аутентификация - вводим пароль
+Авторизация - сервер дает нам определенные права
+"""
 # Шаг 1: Импорт зависимостей
 from fastapi import FastAPI, Depends, status, HTTPException
 from pydantic import BaseModel
